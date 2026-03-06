@@ -59,7 +59,7 @@ button {
     outline: 2px solid var(--primary);
     outline-offset: -2px;
     overflow: hidden;
-    transition: color 500ms;
+    transition: color 250ms;
 }
 
 .secondary-button:hover {
@@ -77,7 +77,7 @@ button {
     background: var(--primary);
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 800ms, border-radius 800ms;
+    transition: transform 500ms, border-radius 500ms;
     z-index: -1;
 }
 
