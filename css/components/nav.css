@@ -52,15 +52,34 @@ nav .navbar ul {
 }
 
 nav .navbar ul li a {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Inter";
     height: 64px;
-    padding: 0 32px;
+    padding: 0 24px;
 }
 
-nav .navbar ul li a:last-child {
+nav .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary);
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 500ms;
+}
+
+nav .navbar ul li a:hover::before {
+    opacity: 1;
+}
+
+nav .navbar ul li a:last-child() {
     padding-right: 0;
 }
 
