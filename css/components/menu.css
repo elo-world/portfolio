@@ -51,7 +51,7 @@
     position: relative;
     color: var(--white);
     font-family: "Sora";
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: 700;
     padding: 24px;
     transition: 800ms;
@@ -82,6 +82,6 @@
 
 @media screen and (max-width: 930px) {
     .menu ul li a {
-        font-size: 6vh;
+        font-size: 5.5vh;
     }
 }
