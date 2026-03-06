@@ -14,7 +14,7 @@
     --window-border: 10vw;
 
     /* TIME */
-    --time-loading: 1s;
+    --time-loading-1: 1s;
     --time-loading-2: 1.2s;
     --time-loading-3: 1.5s;
 }
@@ -82,6 +82,11 @@ p {
     :root {
         /* SPACING */
         --window-border: 5vw;
+
+        /* TIME */
+        --time-loading-1: 1.3s;
+        --time-loading-2: 1.4s;
+        --time-loading-3: 1.7s;
     }
     button {
         font-size: 12px;

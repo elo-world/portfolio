@@ -10,7 +10,7 @@
     background: var(--primary);
     z-index: 1000;
     transform-origin: top;
-    animation: website-loaded 500ms 1s forwards;
+    animation: website-loaded 500ms var(--time-loading-1) forwards;
     padding: 0 var(--window-border);
 }
 

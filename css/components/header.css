@@ -88,7 +88,7 @@ header .last-name-box {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: load-header 500ms var(--time-loading) forwards;
+    animation: load-header 500ms var(--time-loading-1) forwards;
     transform: translateY(100%);
 }
 
@@ -98,7 +98,7 @@ header .last-name-box .last-name {
     align-items: center;
     width: fit-content;
     height: 100%;
-    animation: loop-last-name-left 15s var(--time-loading) infinite linear;
+    animation: loop-last-name-left 15s var(--time-loading-1) infinite linear;
 }
 
 header .last-name-box h1 {

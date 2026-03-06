@@ -1,6 +1,4 @@
 const navbar_scroll = () => {
-    console.log(window.innerWidth);
-
     if (window.innerWidth > 970) {
         if (2 * window.scrollY < window.innerHeight) {
             navbar.style.opacity = `${1 - (2 * window.scrollY) / window.innerHeight}`;
