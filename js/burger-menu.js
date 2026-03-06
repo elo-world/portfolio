@@ -6,7 +6,7 @@ exit_menu.addEventListener("click", () => {
     menu.style.transform = "translateX(100%)";
 });
 
-for (var i = 0; i < menu_buttons.length; i++) {
+for (let i = 0; i < menu_buttons.length; i++) {
     menu_buttons[i].addEventListener("click", () => {
         html.style.scrollBehavior = "auto";
         menu.style.transform = "translateX(100%)";
