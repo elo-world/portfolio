@@ -20,13 +20,28 @@ section#projects {
 
 section#projects .title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 section#projects .title h3 {
     text-wrap: nowrap;
     font-size: 2vw;
+}
+
+section#projects .title p {
+    margin: 24px 0;
+}
+
+section#projects .title .ctas button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#projects .title .ctas button svg {
+    padding-right: 8px;
 }
 
 section#projects .projects {
