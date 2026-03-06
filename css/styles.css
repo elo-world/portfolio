@@ -37,27 +37,26 @@ h1, h2 {
     color: var(--black);
 }
 
-.primary-button {
+button {
     font-size: 16px;
     font-weight: 500;
-    color: var(--white);
-    background: var(--primary);
-    border: none;
-    outline: none;
     padding: 8px 16px;
     border-radius: 24px;
 }
 
+.primary-button {
+    color: var(--white);
+    background: var(--primary);
+    border: none;
+    outline: none;
+}
+
 .secondary-button {
-    font-size: 16px;
-    font-weight: 500;
     color: var(--primary);
     background: var(--white);
     border: none;
     outline: 2px solid var(--primary);
     outline-offset: -2px;
-    padding: 8px 16px;
-    border-radius: 24px;
 }
 
 ul {
@@ -77,4 +76,18 @@ button {
 p {
     font-family: "Inter";
     color: var(--black);
+}
+
+@media screen and (max-width: 930px) {
+    :root {
+        /* SPACING */
+        --window-border: 5vw;
+    }
+    button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    p {
+        font-size: 12px;
+    }
 }

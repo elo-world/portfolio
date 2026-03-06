@@ -26,6 +26,9 @@ header .presentation .image-presentation-container .image-presentation {
     height: 90%;
     border-radius: 80px;
     overflow: hidden;
+    background-image: url("../../images/header_me.JPG");
+    background-size: cover;
+    background-position: 70% 50%;
 }
 
 header .presentation .image-presentation-container img {
@@ -34,7 +37,7 @@ header .presentation .image-presentation-container img {
     left: 50%;
     height: 100%;
     width: auto;
-    transform: translateX(-50%);
+    transform: translateX(-60%);
 }
 
 header .presentation .text-presentation-container {
@@ -49,7 +52,7 @@ header .presentation .text-presentation-container .text-presentation .title {
 }
 
 header .presentation .text-presentation-container .text-presentation .title h1 {
-    font-size: 8vh;
+    font-size: 5vw;
     animation: load-header 500ms var(--time-loading-2) forwards;
     transform: translateY(100%);
 }
@@ -99,7 +102,7 @@ header .last-name-box .last-name {
 }
 
 header .last-name-box h1 {
-    font-size: 20vh;
+    font-size:10vw;
     white-space: nowrap;
     pointer-events: none;
 }
@@ -128,5 +131,36 @@ header .last-name-box h1 {
     }
     to {
         transform: translate(0%, -50%);
+    }
+}
+
+@media screen and (max-width: 930px) {
+    header .presentation {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+    header .presentation .image-presentation-container .image-presentation {
+        width: 100%;
+    }
+    header .presentation .image-presentation-container img {
+        width: 130%;
+        min-height: 100%;
+        height: auto;
+        transform: translate(-60%, -10%);
+    }
+    header .presentation .text-presentation-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    header .presentation .text-presentation-container .text-presentation .title h1 {
+        font-size: 5.5vh;
+    }
+    header .presentation .text-presentation-container .text-presentation .lead p {
+        max-width: auto;
+        line-height: 16px;
+        margin: 16px 0;
     }
 }

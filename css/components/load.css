@@ -11,6 +11,7 @@
     z-index: 1000;
     transform-origin: top;
     animation: website-loaded 500ms 1s forwards;
+    padding: 0 var(--window-border);
 }
 
 #load h1 {
@@ -27,5 +28,11 @@
     to {
         transform: translateY(-100%);
         border-radius: 0 0 50% 50%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #load h1 {
+        font-size: 4vh;
     }
 }
